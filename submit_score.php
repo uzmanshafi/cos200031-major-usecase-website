@@ -1,16 +1,18 @@
 <?php
 // Connect to the database
-$host = 'feenx-mariadb.swin.edu.au';
+$host = 'feenix-mariadb.swin.edu.au';
 $user = 's103177240';
 $pass = 'thinhdang';
 $db = 's103177240_db';
 
-$conn = new mysqli($host, $user, $pass, $db);
+$conn = @mysqli_connect($host, $user, $pass, $db);
 
 // Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+if (!$conn) 
+{
+    echo "<p>Database connection failure</p>";
+} 
+else {
 
 // Fetch data from POST
 $archerId = $_POST['archer'];
@@ -26,6 +28,7 @@ for ($i = 1; isset($_POST['end' . $i]); $i++) {
 // Insert scores into the database
 foreach ($scores as $score) {
     $conn->query("INSERT INTO scores (archer_id, round_id, total_score) VALUES ($archerId, $roundId, $score)");
+}
 }
 
 echo "Scores have been submitted!";
