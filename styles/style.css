@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(334deg, #b9ecd9, #3be2aa, #09cc71);
+    background-size: 180% 180%;
+    animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Index Page CSS */
+
+.index_container {
+    display: flex;
+    width: 380px;
+    min-height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.459);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+    /*center*/
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+}
+
+.index_container label {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.index_container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #2c3e50;
+    font-weight: 500;
+    outline: none;
+    transition: all .1s;
+}
+
+.index_container select:focus {
+    border-color: #14e0a3;
+}
+
+.index_container input[type="submit"] {
+    margin-top: 10px;
+    color: #ecf0f1;
+    font-size: 17px;
+    background-color: #14e0a3;
+    border: 1px solid #c8ffe3;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0px 6px 0px #079979;
+    transition: all .1s;
+    cursor: pointer;
+    /*center*/
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.index_container input[type="submit"]:hover {
+    box-shadow: 0px 2px 0px #079979;
+    position: relative;
+    top: 2px;
+}
+
+.arch_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#archerInfo h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#archerInfo p {
+    text-align: center;
+    line-height: 40px;
+}
+
+/* Page 2 CSS */
+.score_page /* page 2 body css */
+{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(334deg, #b9ecd9, #3be2aa, #09cc71);
+    background-size: 180% 180%;
+    animation: gradient-animation 6s ease infinite;
+}
+
+.score_container
+{
+    display: flex;
+    width: 420px;
+    min-height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.459);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+
+}
+
+.score_container label {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.score_container h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.score_container p
+{
+    text-align: center;
+    line-height: 30px;
+}
+.score_container select
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #2c3e50;
+    font-weight: 500;
+    outline: none;
+    transition: all .1s;
+    margin-top: 10px;
+}
+
+.score_container input[type="submit"]
+{
+    margin-top: 10px;
+    color: #ecf0f1;
+    font-size: 17px;
+    background-color: #14e0a3;
+    border: 1px solid #c8ffe3;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0px 6px 0px #079979;
+    transition: all .1s;
+    cursor: pointer;
+    /*center*/
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.score_container input[type="submit"]:hover
+{
+    box-shadow: 0px 2px 0px #079979;
+    position: relative;
+    top: 2px;
+}
+
+.endInputs input[type="text"]
+{
+    width: 50px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #00ff6a;
+    font-weight: 800;
+    outline: none;
+    transition: all .1s;
+    margin-top: 10px;
+    /*space between inputs*/
+    margin-right: 10px;
+    background-color: #2c3e50;
+    text-align: center;
+}
+
+.endInputs input[type="text"]:focus
+{
+    border-color: #14e0a3;
+}
+
+#keypad {
+    border: #079979 2px solid;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* This will create a 3-column grid */
+    grid-gap: 2px; /* This will provide a 10px gap between the buttons */
+    justify-items: center; /* This will center the items horizontally */
+    align-items: center; /* This will center the items vertically */
+    padding: 10px; /* Some padding around the keypad */
+    margin-top: 10px; /* Some margin to the top, you can adjust as needed */
+}
+
+#keypad button
+{
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 800;
+    outline: none;
+    cursor: pointer;
+    transition: all .1s;
+    margin-bottom: 10px;
+}
+
+#keypad button:hover
+{
+    box-shadow: 0px 2px 0px #2b2b2b;
+    position: relative;
+    top: 2px;
+}
+
+#keypad button:nth-child(1) , #keypad button:nth-child(2) , #keypad button:nth-child(3)
+{
+    background-color: #e5ff00;
+    color: #000000;
+}
+
+#keypad button:nth-child(4) , #keypad button:nth-child(8)
+{
+    background-color: #ff0000;
+    color: #000000;
+}
+
+#keypad button:nth-child(5) , #keypad button:nth-child(9)
+{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#keypad button:nth-child(6) , #keypad button:nth-child(7)
+{
+    background-color: #002fff;
+    color: #ffffff;
+}
+
+#keypad button:nth-child(10), #keypad button:nth-child(11), #keypad button:nth-child(12)
+{
+    background-color: #fdfdfd;
+    color: #000000;
+}
+
+.totalScore
+{
+    font-size: 20px;
+    font-weight: 800;
+    color: #0f1114;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* Success Page */
+
+.success_page /* override other body css */
+{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(334deg, #b9ecd9, #3be2aa, #09cc71);
+    background-size: 180% 180%;
+    animation: gradient-animation 6s ease infinite;
+}
+
+.success_container
+{
+    display: flex;
+    width: 500px;
+    min-height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(226, 226, 226, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.success_container h1
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.success_container p
+{
+    background-color: #0f1114;
+    padding: 10px;
+    border-radius: 5px;
+    border: rgba(255, 255, 255, 0.8) 1px solid;
+    box-shadow: 0px 6px 0px #0799797c;
+    font-size: 1rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #00ff6a;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.success_container h2
+{
+    font-size: 25px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.success_container ul
+{
+    list-style: none;
+    margin-bottom: 20px;
+    background-color: #0f1114;
+    padding: 10px;
+    border-radius: 5px;
+    border: rgba(255, 255, 255, 0.8) 1px solid;
+    box-shadow: 0px 6px 0px #0799797c;
+    transition: all .1s;
+}
+
+.success_container ul li
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: #00d6fc;
+    margin-bottom: 10px;
+    
+}
+
+.success_container a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 10px;
+    color: #ecf0f1;
+    font-size: 17px;
+    background-color: #14e0a3;
+    border: 1px solid #c8ffe3;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0px 6px 0px #079979;
+    transition: all .1s;
+    cursor: pointer;
+}
+
+.success_page a:hover
+{
+    box-shadow: 0px 2px 0px #079979;
+    position: relative;
+    top: 2px;
+}
+
